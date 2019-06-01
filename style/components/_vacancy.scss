@@ -1,0 +1,159 @@
+#vacancy{
+    margin-top: 80px;
+}
+article{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    padding: 40px 0 40px 0;
+    margin: 30px 0 20px 0;
+    p.title{
+        font-size: ($standart + 10px);
+        padding-bottom: 15px;
+    }
+    .part{
+        padding: 0 120px 0 120px;
+        .vacancy__once{
+            text-transform: uppercase;
+            font-size: $standart;
+            span{
+                color: $yellow;
+                text-transform: capitalize;
+            }
+        }
+        &.text-left{
+            padding-right: 40px;
+            .vacancy__once span{
+                padding-left: 15px;
+            }
+        }
+        &.text-center{
+            padding-left: 40px;
+        }
+    }
+    .button{
+        position: relative;
+        top: 15px;
+        border-radius: 90px;
+        font-size: $standart;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+}
+.paginations{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 25px 0 0 0;
+    font-size: ($big - 10px);
+    color: $text;
+    .navigation{
+        width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+        .nav-links{
+            width: 100%;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                    justify-content: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+    }
+    .current{
+            border: 2px solid $text;
+            width: 50px;
+            height: 50px;
+            border-radius: 80px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+                    align-items: center;
+            margin: 0 10px 0 10px;
+    }
+    a{
+            color: $text;
+            width: 50px;
+            height: 50px;
+            border-radius: 80px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+                    align-items: center;
+            margin: 0 10px 0 10px;
+        &:hover, &:focus, &:visited{
+            color: $text;
+            text-decoration: none;
+            border: 2px solid $text;
+        }
+        &.prev:after{
+                content: '';
+                background-image: url(../images/arrow-min-blue-min.webp);
+                height: 50px;
+                width: 50px;
+                background-position: center;
+                background-repeat: no-repeat;
+                -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                        transform: rotate(90deg);
+        }
+        &.next:after{
+                content: '';
+                background-image: url(../images/arrow-min-blue-min.webp);
+                height: 50px;
+                width: 50px;
+                background-position: center;
+                background-repeat: no-repeat;
+                -webkit-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+                        transform: rotate(-90deg);
+        }
+        &.next, &.prev{
+            &:hover, &:focus, &:visited{
+                border: none;
+            }
+        }
+    }
+}
+.ias-trigger{
+    .button{
+        color: $white;
+        position: relative;
+        top: 15px;
+        border-radius: 90px;
+        font-size: $standart;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+}
+@media screen and (max-width:900px){
+    article .button{
+        font-size: $small;
+    }
+}
+@media screen and (max-width:700px){
+    article .part{
+        padding: 0 15px 0 15px;
+        &.text-left{
+        }
+        &.text-center{
+            text-align: left!important;
+            padding-left: 15px;
+        }
+    }
+}

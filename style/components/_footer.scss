@@ -1,0 +1,111 @@
+footer{
+    background-image: url(../images/f2-min.webp); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    font-size: $standart;
+    font-family: $museo_bolder;
+    padding-top: 50px;
+    a, a:hover,a:focus, a:visited, a:active {
+        color: $white;
+        text-decoration: none;
+    }
+    .column{
+        line-height: 1.2;
+    }
+    .column.text-right, .column.text-center{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+                flex-direction: column;
+        h4{
+            padding-bottom: 10px;
+        }
+        a{
+            width: 100%;
+            &.button{
+                border: 2px $white solid;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                padding: 10px 15px 10px 15px;
+                -webkit-transition: .3s;-o-transition: .3s;transition: .3s;
+                background: $transparent;
+                &:hover, &:focus, &:visited{
+                    background: $yellow;
+                }
+            }
+        }
+        .phone-wrapper{
+            padding: 10px 0 10px 0;
+            display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+                flex-direction: column;
+        }
+        p{
+            font-size: $small;
+            margin-bottom: 6px;
+            color: $white;
+        }
+    }
+    .column.text-center p{
+        width: 90%;
+        font-size: $small;
+    }
+  .column nav{
+      ul{
+            li{
+                padding-bottom: 30px;
+                width: 60%;
+                a{
+                    font-family: $museo_bolder;
+                }
+            }
+        }
+    }
+}
+.copyright{
+    color: $yellow;
+    font-size: ( $small - 3px );
+    padding: 20px 0 20px 0;
+    padding-right: 15px;
+}
+@media screen and (min-width: 800px){
+    footer{
+        .column.text-center{
+            a.button{
+                width: 70%;
+            }   
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    footer{
+        font-size: ( $standart - 2px);
+    }
+}
+@media screen and (max-width: 600px){
+    footer{
+        .column{
+             -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+            nav, nav ul li, &.text-right, &.text-right p{
+                width: 100%;
+                text-align: center!important;
+            }
+        }
+    }
+}

@@ -1,0 +1,120 @@
+#seamen__header{
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    background-size: cover;
+	background-color: $yellow;
+    .seamen__wrapper{
+        position: absolute;
+        bottom: 80px;
+        p.title{
+            color: $yellow;
+        }
+        p.subtitle{
+            color: $white;
+            font-size: $standart;
+            padding-bottom: 30px;
+        }
+        .button{
+            font-size: $small;
+            font-family: $museo_bold;
+            &.circle{
+                border-radius: 100px;
+                padding: 15px 7px;
+                display: block;
+                width: 65px;
+                height: 65px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .right__arrow{
+                -webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
+                height: 9px;
+                width: auto;
+                position: relative;
+                bottom: 2px;
+            }
+        }
+    }
+}
+#adv{
+    p.title{
+        padding: 80px 0 50px 0;
+        &.subtitle{
+            padding: 20px 0 0 0;
+            color: $yellow;
+            font-size: $standart;
+            width: 90%;
+            display: block;
+            margin: auto;
+            font-family: $text_family;
+        }
+    }
+}
+#contact__seamen{
+    padding-bottom: 70px;
+    padding-top: 70px;
+    div.desc{
+        font-size: $standart;
+        padding: 40px 10px 0 10px;
+        text-align: justify;
+        line-height: 2;
+        a{
+            color: $text;
+            text-decoration: underline;
+        }
+    }
+    .download__wrapper{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                    flex-direction: column;
+            margin: 40px 0 30px 0;
+            padding-bottom: 50px;
+            img{
+                height: auto;
+                width: 40%;
+                display: block;
+                margin: auto;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+                border-radius: 25px;
+                cursor: pointer;
+            }
+            .button{
+                width: 40%;
+                display: block;
+                margin: auto;
+                position: relative;
+                top: -30px;
+                border-color: $white;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+                font-size: $standart;
+                font-family: $museo_bold;
+                &:hover, &:focus, &:active{
+                    opacity: 1;
+                }
+            }
+        }
+}
+@media screen and ( min-height: 1000px){
+    #seamen__header{
+        height: 50vh;
+    }
+}
+@media screen and ( max-width: 800px){
+    #contact__seamen .download__wrapper img, #contact__seamen .download__wrapper .button{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 600px){
+    .one__feature{
+        margin-bottom: 25px;
+    }
+}

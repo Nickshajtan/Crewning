@@ -1,0 +1,33 @@
+/*
+Theme Name: ship
+Description:  ship ads theme
+*/
+/*Header*/
+header nav ul li.logo {
+	top: -50px;
+}
+/*Owner page*/
+.custom-select-my {
+    background: 0 0;
+    border-color: #f8c61e;
+    border-width: 3px;
+    border-radius: 20px;
+    color: #034a58;
+	font-family: "museo_sans_cyrl300";
+}
+/*Ovelay color*/
+#seamen__header{
+	background-color:#f8c61e;
+}
+/*Adaptive main slider*/
+@media screen and (min-height:600px) and (max-height: 700px){
+	#rev_slider_1_1_forcefullwidth .slider__subtitle{
+		top: -100px;
+	}
+	#rev_slider_1_1_forcefullwidth .button{
+		bottom: 180px;
+	}
+	#rev_slider_1_1_forcefullwidth #rev_slider_1_1 li .slotholder .tp-bgimg.defaultimg{
+		background-position-y:-100px;
+	}
+}

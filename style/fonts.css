@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'museo_sans_cyrl900';
+    src: url('fonts/MuseoSansCyrl/museosanscyrl_900_italic_0-webfont.woff2') format('woff2');
+    src: url('fonts/MuseoSansCyrl/museosanscyrl_900_italic_0-webfont.woff') format('woff'),
+         url('fonts/MuseoSansCyrl/museosanscyrl_900_italic_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl/museosanscyrl_900_italic_0-webfont.eot');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'museo_sans_cyrl900';
+    src: url('fonts/MuseoSansCyrl/museosanscyrl_900_0-webfont.woff') format('woff');
+    src: url('fonts/MuseoSansCyrl/museosanscyrl_900_0-webfont.woff2') format('woff2'),
+         url('fonts/MuseoSansCyrl/museosanscyrl_900_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl/museosanscyrl_900_0-webfont.eot');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'museo_sans_cyrl700';
+    src: url('fonts/MuseoSansCyrl/museosanscyrl_700_0-webfont.woff2') format('woff2'); 
+    src: url('fonts/MuseoSansCyrl/museosanscyrl_700_0-webfont.woff') format('woff'),
+         url('fonts/MuseoSansCyrl/museosanscyrl_700_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl/museosanscyrl_700_0-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'museo_sans_cyrl300';
+    src: url('fonts/MuseoSansCyrl/museosanscyrl_300_italic_0-webfont.woff2') format('woff2');
+    src: url('fonts/MuseoSansCyrl/museosanscyrl_300_italic_0-webfont.woff') format('woff')
+         url('fonts/MuseoSansCyrl/museosanscyrl_300_italic_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl/museosanscyrl_300_italic_0-webfont.eot');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'helveticaneuecyrmedium';
+    src: url('fonts/HelveticaNeueCyr/helveticaneuecyr-medium-webfont.woff2') format('woff2'); 
+    src: url('fonts/HelveticaNeueCyr/helveticaneuecyr-medium-webfont.woff') format('woff'), 
+         url('fonts/HelveticaNeueCyr/helveticaneuecyr-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/HelveticaNeueCyr/helveticaneuecyr-medium-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

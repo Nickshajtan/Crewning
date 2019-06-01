@@ -1,0 +1,200 @@
+body{
+    background-color: $white;
+    font-family: $text_family, sans-serif;
+}
+nav{
+    display: -webkit-box;display: -ms-flexbox;display: flex;
+    ul{
+        margin: 0;
+        padding-left: 0;
+        width: 100%;
+        li{   
+            list-style: none;
+            float: left;
+            a{    
+                color: $white;
+                font-family: $museo_bold;
+                &:hover, &:active, &:focus, &:visited, &.active{
+                    color: $white;
+                    border-bottom: 5px $yellow solid;
+                    -webkit-transition: .3s;-o-transition: .3s;transition: .3s;
+                    text-decoration: none;
+                } 
+                &.logo:hover,&.logo:focus, &.logo:active, &.logo:visited{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+footer nav{
+    display: block;
+}
+p{
+    color: $text;
+}
+p.title{
+    font-size: $big;
+    font-family: $museo_bold;
+    &.sub{
+        color: $yellow;
+        font-size: $small;
+        text-transform: uppercase;
+    }
+    &.subtitle{
+        font-size: $small;
+    }
+}
+img{
+    -o-object-fit: contain;object-fit: contain;
+}
+.one__feature img{
+        margin-bottom: 15px;
+        border-radius: 100px;
+}
+.button{
+        border: 2px #fff solid;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        padding: 10px 15px 10px 15px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        background: transparent;
+        text-decoration: none;
+        color: $white;
+    &:hover, &:focus, &:active{
+        background: $yellow;
+        text-decoration: none;
+        color: $white;
+    }
+    &.yellow__button{
+        background: $yellow;
+        border-color: $transparent;
+        color: $white;
+        &:hover, &:focus, &:active{
+            opacity: .8;
+            color: $white;
+        }
+        &.fill{
+            font-family: $museo_bold;
+        }
+    }
+}
+.scale:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    .scale:hover{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+    }
+}
+.overlay{
+    position: fixed;
+    display: none;
+    z-index: 15;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    &.on, &.one{
+        display: block;
+    }
+}
+.error__button{
+    color: $text;
+    font-size: $standart;
+    border: 2px solid $text;
+    background-color: $transparent;
+    padding: 8px 60px 8px 60px;
+    border-radius: 5px;
+    &:hover, &:focus, &:visited{
+        background-color: $yellow;
+        text-decoration: none;
+    }
+}
+#my__modal{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding: 30px;
+    z-index: 100;
+    padding-top: 100px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    #close{
+        position: relative;
+        width: 60px;
+        height: 60px;
+        font-size: 60px;
+        z-index: 111;
+        text-align: center;
+        color: #fff;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+    #modal__content{
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        -o-object-fit: contain;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.contact__modal{
+    .modal-dialog{
+        margin-top: 90px;
+    }
+    .modal-content{
+        border: none;
+    }
+    .modal-body{
+        background-color: $text;
+        ul{
+            padding-left: 0;
+        }
+        li{
+            list-style: none;
+        }
+        .thank, .thank *{
+            font-size: $small;
+            color: $white;
+            font-style: italic;
+            padding-bottom: 20px;
+        }
+    }
+}
+@media screen and (min-width:1921px){
+    section{
+        max-width: 1920px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        &#contact__home, &#main{
+            background-color: $text;
+            background-repeat: repeat-x;
+            max-width: 100%;
+        }
+        &#seamen__header,#seamen__header{
+            background-color: $yellow;
+            background-repeat: repeat-x;
+            max-width: 100%;
+        }
+    }    
+}

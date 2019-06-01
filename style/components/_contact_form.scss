@@ -1,0 +1,170 @@
+p.desc{
+    padding: 30px 0 15px 0;
+    font-size: $standart;
+}
+input[type=text], input[type=tel], input[type=email], textarea#question, .custom-select-my{
+    background: $transparent;
+    border-color: $yellow;
+    border-width: 3px;
+    border-radius: 20px;
+    color: $text;
+    font-family: $museo_light;
+    &::placeholder{
+        color: $text;
+        font-style: italic;
+    }
+    &::-webkit-input-placeholder{
+        color: $text;
+        font-style: italic;
+    }
+    &:-ms-input-placeholder{
+        color: $text;
+        font-style: italic;
+    }
+    &::-ms-input-placeholder{
+        color: $text;
+        font-style: italic;
+    }
+    &::-moz-placeholder{
+        color: $text;
+        font-style: italic;
+    }
+    &:focus{
+        background: $transparent;
+        color: $text;
+        border-color: $yellow;
+        border-width: 3px;
+        border-radius: 20px;
+        box-shadow: none;
+    }
+}
+input[type=text], input[type=tel], input[type=email], .custom-select-my{
+    height: 40px;
+    font-style: italic;
+}
+input[type=submit]{
+    color: $white;
+    background: $yellow;
+    border-radius: 80px;
+    border: none;
+    font-size: $standart;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 35px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    font-family: $museo_bold;
+    &:focus{
+        outline: none;
+        top: 5px;
+        position: relative;
+    }
+}
+.custom-select-my{
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+         display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+        select{
+            margin: 0!important;
+            width: 90%;
+            border: none;
+            -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+            font-style: italic;
+            &:focus{
+                outline: none;
+            }
+            option{
+                outline: none;
+                border: none;
+                font-style: italic;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    .value{
+        width: 100%;
+        padding-left: 15px;
+        &:after{
+            content: '';
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            -webkit-transition: .3s;-o-transition: .3s;transition: .3s;
+            width: 25px;
+            height: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../images/arrow-min-blue-min.webp);
+        }
+        &.arrow:after{
+            -webkit-transform: rotate(180deg);-ms-transform: rotate(180deg);transform: rotate(180deg);
+            top: 3px;
+        }
+    }
+    .child{
+        position: absolute;
+        top: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+                flex-direction: column;
+        background: #fff;
+        z-index: 5;
+        width: 80%;
+        padding: 10px;
+        border: 2px solid $yellow;
+        border-top-color: $transparent;
+        border-radius: 12px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        .meta{
+            margin-bottom: 3px;
+            border-bottom: 1px solid $transparent;
+            &:hover{
+                border-bottom: 1px solid $yellow;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    input[type=text], input[type=tel], input[type=email], .custom-select-my{
+        height: 60px;
+        font-size:$small;
+    }
+    .custom-select-my .value{
+            height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+        &:after{
+            top: 20px;
+        }
+        &.arrow:after{
+            top: 13px;
+        }
+    }
+    .custom-select-my .child{
+        width: 100%;
+        .meta{
+            margin: 20px 0 20px 0;
+            font-size: ( $small + 2px);
+        }
+    }
+}
