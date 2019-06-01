@@ -1,8 +1,8 @@
 # Ship.
-#Live link
+###### Live link
 https://employer-marine.com
 
-#description
+### description
 
 Ship is my simple special Wordpress theme for special customer requirements on the crew management site.
 My client needed to redesign the site and I created it from scratch based on a PSD template.
@@ -12,16 +12,17 @@ feedback form (including sending as a csv file) is a custom, its code is in the 
 As part of an integrated approach, the WP Yoast SEO plugin was also used with caching and minification plugins.
 Also since the client had no need to support older browsers, I used images with .webp resolution as recommended by Google
 
-The pages are:
-Home
-For owner
-For seamen
-Vacancies
+#### The pages are:
 
-#designs
+* Home
+* For owner
+* For seamen
+* Vacancies
+
+### designs
 PSD Template Author Igor Chernienko
 
-#Necessary plugins for the template to work properly
+### Necessary plugins for the template to work properly
 
-Slider revolution - slider on the top of Home page
-Custom fields pro - all content fields, also files fields.
+* Slider revolution - slider on the top of Home page
+* Custom fields pro - all content fields, also files fields.
