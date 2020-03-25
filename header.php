@@ -1,27 +1,14 @@
-<?php if (substr_count($_SERVER[‘HTTP_ACCEPT_ENCODING’], ‘gzip’)) ob_start(«ob_gzhandler»); else ob_start(); ?>
+<?php if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip')) ob_start('ob_gzhandler'); else ob_start(); ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,user-scalable=0">
-    <meta name="keywords" content=""><!--link(rel="shortcut icon" type="image/x-png" href="<?php echo get_template_directory_uri() ?>/img/svg/logo.png")  -->
+    <meta name="keywords" content="">
     <?php wp_head(); ?>
     <?php if( is_front_page() ) : ?>
     <script type="text/javascript">
-	/*function ready() {
-		let wrapper = document.getElementById('rev_slider_1_1_wrapper');
-		wrapper.style.height = '100vh';
-		wrapper.style.maxHeight = '100vh';
-		let slider = document.getElementById('rev_slider_1_1');
-		slider.style.height = '100vh';
-		slider.style.maxHeight = '100vh';
-		alert(slider.height);
-		alert(wrapper.height);
-		alert('ura');
-	}
-	document.addEventListener("DOMContentLoaded", ready);
-		*/
     $.noConflict();
     jQuery(document).ready(function($){
         var slider = $('section#main');
